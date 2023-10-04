@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color : #0e4bf1;
+    --panel-color: #fff;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toogle-color: #ddd;
+    --box1-color: #4da3ff;
+    --box2-coloe: #ffe6ac;
+    --box3-color: #e7d1fc;
+    --title-icon-color: #fff;
+
+    /* transition */
+    --trans-05: all 0.5s ease;
+    --trans-03: all 0.3s ease;
+    --trans-02: all 0.2s ease;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 20px;
+     background-color: var(--panel-color);
+     
+} 
+body{
+min-height: 100vh;
+background-color: var(--primary-color);
+}
+nav .logo-image{
+    max-width: 45px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav .logo-image img{
+    width: 40px;
+    height: 40px;
+   
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+nav .logo-name{
+    display: flex;
+   align-items: center;
+}
+
+nav .logo-name .logo_name{
+    font-size: 22px;
+    display: flex;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 14px;
+}
+nav .logo-name .logo_name p{
+    color: var(--primary-color);
+    font-size: 30px;
+    position: absolute;
+    top: 8px;
+    left: 64%;
+}
+
+nav .menu-items{
+    margin-top: 40px;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-items li{
+    list-style: none;
+}
+.menu-items li a{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-decoration: none;
+    position: relative;
+
+}
+.nav-links li a:hover:before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+.menu-items li a i{
+    font-size: 24px;
+    min-width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-light-color);
+}
+.menu-items li a .link-name{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: var(--black-light-color);
+
+}
+.nav-links li a:hover i,.nav-links li a:hover .link-name{
+    color: var(--primary-color);
+}
+
