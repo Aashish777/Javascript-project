@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lora', serif; */
+}
+:root{
+    --dark-text-: black;
+    --text-color-: #48484A;
+    --text-hover-: #4453AC;
+    --light-text-: #79797B;
+}
+
+nav{
+   
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 300px;
+    padding: 50px 30px;
+    background:#F2F3F7!important;
+    
+}
+nav .close-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--text-hover-);
+    cursor: pointer;
+    display: none;
+}
+nav .profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+nav .profile-image img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    
+}
+
+nav .profile-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 33px;
+}
+nav .profile-name span:first-child{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Philosopher', sans-serif;
+}
+nav .profile-name span:last-child{
+    font-size: 20px;
+    color:#4453AC;
+}
+nav .menu-items{
+    margin-top: 20px;
+}
+.menu-items li{
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+.menu-items li a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 450;
+    font-family: 'Quicksand', sans-serif!important;
+    line-height: 40px;
+    color: var(--text-color-);
+    text-transform: uppercase;
+    justify-content: center;
+    width: auto;
+}
+
+
+.menu-items li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:var(--text-hover-);
+    transform-origin: bottom center;
+    transition: transform 0.20s ease-in;
+}
+.menu-items li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+nav .copyright{
+    position: absolute;
+    bottom: 15px;
+    
+}
+nav .copyright p{
+    font-size: 15px;
+    color: var(--light-text-);
+    font-family: 'Quicksand', sans-serif!important;
+}
+.hero-section{
+  
+    height: 100vh;
+    width: calc(100% - 300px);
+    
+    
+}
+.hero-section .bar-icon{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    color: var(--text-hover-);
+    cursor: pointer;
+    display: none;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+.content h1{
+    color: var(--dark-text-);
+    margin: 20px 0px 20px;
+    font-size: 60px;
+    font-family: 'Philosopher', sans-serif;
+}
+.content h1 span{
+    color: var(--text-hover-);
+}
+.content h3{
+    color:var(--dark-text-);
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: 100;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.content h4{
+    color:var(--dark-text-);
+    font-family: 'Philosopher', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+
+.hero-image{
+    position: absolute;
+    top: 52%;
+    left: 60%;
+    transform: translateY(-50%);  
+}
+.hero-image img{
+  
+    filter: grayscale(100%);
+    height: 100%;
+}
+
+.newslatter .CV{
+    padding: 12px 25px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif!important;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: var(--text-hover-);
+}
+/* .menu-items li a:hover{
+    transition: transform 0.25s ease-out;
+    color:black;
+    padding-bottom: 10px;
+    transition: al;
+    text-decoration: underline ;
+    text-decoration-color: #4453AC;
+    text-underline-position: under; 
+} 
+
+*/
+
+/* About Section */
+.about-section{
+    padding: 20px 90px 20px 350px;
+}
+
+
+.who{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.who p{
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif!important; 
+    color: var(--text-color-);
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+.who h2{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    color: var(--text-color-);
+
+}
+.paragraph p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    font-family: 'Quicksand', sans-serif;
+}
+.paragraph p:first-child{
+
+    margin-bottom: 20px;
+}
+.paragraph p:first-child span{
+    color: var(--text-hover-);
+    font-weight: 500;
+}
+.about-skill{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-skill .skill{
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.skill i{
+    padding: 30px;
+    font-size: 40px;
+    
+}
+.skill p{
+    font-size: 18px;
+    font-family:'Quicksand', sans-serif ;
+    font-weight: 500;
+    padding: 10px 30px ;
+}
+.graphics{
+    border-bottom: 3px solid #4E96E9 ;
+    
+}
+.graphics i{
+    color:#4E96E9 ;
+}
+.web{
+    border-bottom: 3px solid #DB5F59 ;
+}
+.web i{
+    color: #DB5F59;
+}
+.software{
+    border-bottom: 3px solid #F0C159 ;
+    
+}
+.software i{
+    color:#F0C159 ;
+}
+.application{
+    border-bottom: 3px solid #9D51B3 ;
+    
+}
+.application i{
+    color:#9D51B3;
+}
+marquee{
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--text-hover-);
+    font-family: 'Quicksand', sans-serif;
+    }
+
+.hire{
+    margin-top: 30px;
+}
+.hire .hire-me{
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:'Quicksand', sans-serif ;
+    background-color:var(--text-hover-) ;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width : 1150px){
+    nav{
+        display: none;
+    }
+    .hero-section{
+        padding: 20px;
+    }
+    .content{
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        transform: translateY(-20%);
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .content h3{
+        font-size: 25px;
+    }
+    .content h4{
+        font-size: 30px;
+    }
+    .hero-section .bar-icon{
+        display: block;
+    }
+    .hero-image{
+        position: absolute;
+        top: 52%;
+        left: 35%;
+        transform: translateY(-50%);  
+    }
+   
+}
+
+
+   
+
+
+
