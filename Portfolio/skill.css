@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --dark-text-: black;
+    --text-color-: #48484A;
+    --text-hover-: #4453AC;
+    --light-text-: #79797B;
+}
+
 .skill-section{
     padding: 20px 90px 20px 350px;
 }
@@ -15,3 +22,130 @@
     font-family:'Quicksand', sans-serif ;
     line-height: 35px;
 }
+
+.container{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.container .skill-box{
+    width: 45%;
+   
+    /* margin: 25px 0; */
+    
+}
+.skill-box .title{
+    display: block;
+    font-size: 18px;
+    font-family:'Quicksand', sans-serif ;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--dark-text-);
+    line-height: 50px;
+    margin-top: 20px;
+
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 75%;
+    border-radius: 6px;
+    background: #4E96E9;
+    animation: progress 0.8s ease-in-out forwards;
+}
+.skill-per.jquery{
+    background:#DB5F59 ;
+    width: 60%;
+}
+.skill-per.html{
+    background:#F0C159 ;
+    width: 85%;
+}
+.skill-per.css{
+    background:#9D51B3 ;
+    width: 90%;
+}
+.skill-per.flutter{
+    background:#54A299 ;
+    width: 70%;
+}
+.skill-per.seo{
+    background:#4453AC ;
+    width: 80%;
+}
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    font-size:15px ;
+    font-family:'Quicksand', sans-serif ;
+    font-weight: 600;
+    color: #fff;
+    background: #4E96E9;
+    padding: 2px 6px;
+    z-index: 1;
+    border-radius: 3px;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color:#4E96E9;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+.tooltip.jquery::before{
+    background-color:#DB5F59;
+}
+.tooltip.jquery{
+    background-color: #DB5F59;
+}
+.tooltip.html::before{
+    background-color:#F0C159;
+}
+.tooltip.html{
+    background-color: #F0C159;
+}
+.tooltip.css::before{
+    background-color:#9D51B3;
+}
+.tooltip.css{
+    background-color: #9D51B3;
+}
+.tooltip.flutter::before{
+    background-color:#54A299;
+}
+.tooltip.flutter{
+    background-color: #54A299;
+}
+.tooltip.seo::before{
+    background-color:#4453AC;
+}
+.tooltip.seo{
+    background-color: #4453AC;
+}
+

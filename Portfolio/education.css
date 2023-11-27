@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --dark-text-: black;
+    --text-color-: #48484A;
+    --text-hover-: #4453AC;
+    --light-text-: #79797B;
+    --bgc-color-: #4E96E9;
+}
+
+.education-section{
+    padding: 20px 90px 20px 350px;
+}
+
+
+.container {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    margin: 10px;
+   position: relative;
+  
+}
+.container p{
+    font-family: 'Quicksand', sans-serif ;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.details-container{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    margin: 10px;
+   position: relative;
+   
+}
+.details-container p{
+   margin: 30px 0;
+    max-width: 48%;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif ;
+    line-height: 30px;
+
+}
+
+.details-box {
+    display: none;
+    
+}
+.details-box .details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
