@@ -14,15 +14,22 @@
 .education-section{
     padding: 20px 90px 20px 350px;
 }
+.education-container{
+    margin-top: 100px;
+}
 
 
 .container {
-    width: 100%;
+    width: 80%;
     border: 1px solid #ccc;
-    padding: 15px 30px;
-    margin: 10px;
+    padding: 20px 30px;
+    margin: 20px;
    position: relative;
+   background: #f2f3f7;
   
+}
+.container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .container p{
     font-family: 'Quicksand', sans-serif ;
@@ -31,11 +38,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .details-container{
-    width: 100%;
+    width: 80%;
     border: 1px solid #ccc;
-    padding: 10px 30px;
-    margin: 10px;
+   padding:  10px 30px;
+    margin: 20px;
    position: relative;
    
 }
@@ -59,9 +67,13 @@
 
 .icon {
     position: absolute;
-    top: 5px;
+    top: 0px;
     right: 30px;
     cursor: pointer;
     font-size: 30px;
     font-family: 'Quicksand', sans-serif;
 }
+.icon i{
+    font-size: 15px;
+}
+
